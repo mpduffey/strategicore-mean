@@ -1,0 +1,29 @@
+<div class="max-height">
+	<h4>Text Search</h4>
+	<input type="text" name="Quote" class="form-control" placeholder="Text Search"><br>
+	<input type="checkbox" name="video"><br>
+	<h4>Issue</h4>
+	<ui-select multiple ng-model="multipleDemo.selectedPeopleSimple" theme="bootstrap" ng-disabled="disabled" close-on-select="false" style="width: 800px;" title="Choose a person">
+		<ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+		<ui-select-choices repeat="person.email as person in people | propsFilter: {name: $select.search, age: $select.search}">
+			<div ng-bind-html="person.name | highlight: $select.search"></div>
+			<small>
+			email: {{person.email}}
+			age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+			</small>
+		</ui-select-choices>
+	</ui-select>
+	<select name="Issue" data-placeholder="Choose an issue..." style="width:90%;" multiple class="filter-criteria filter-panel">
+	</select><br>
+	<h4>Research Target</h4>
+	<select name="Research_Subject" data-placeholder="Choose a research target..." style="width:90%;" multiple class="filter-criteria filter-panel">
+	</select><br>
+	<h4>Source Publication</h4>
+	<select name="Source_Publication" data-placeholder="Choose a source publication..." style="width:90%;" multiple class="filter-criteria filter-panel">
+	</select><br>
+	<h4>Reporter</h4>
+	<select id="Reporter_Filter" name="Reporter" data-placeholder="Choose a reporter..." style="width:90%;" multiple class="filter-criteria filter-panel">
+	</select><br>
+	<h4>Publication Date</h4>
+	<input name="Publication_Date" style="width:86%;" class="filter-criteria filter-panel" ></input>
+</div>

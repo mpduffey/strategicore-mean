@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Strategicore</title>
+		<!-- Viewport mobile tag for sensible mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!--STYLES-->
+		<link rel="stylesheet" href="/styles/global.css">
+		<link rel="stylesheet" href="/styles/importer.css">
+		<link rel="stylesheet" href="/vendor/angular-ui-select/dist/select.min.css">
+		<link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
+		<!--STYLES END-->
+	</head>
+
+	<body ng-app="strategicore">
+		<div class="container-fluid flex-container-column max-height max-width">
+			<nav class="navbar navbar-inverse">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/#home">Strategicore</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="/research">Research Bites</a></li>
+					<li><a href="/#legislative-record">Legislative Record</a></li>
+					<li><a href="">Add Research</a></li>
+				</ul>
+				<login-widget></login-widget>
+			</nav>
+			<div ui-view class="flex-item"></div>
+		</div>
+
+		<!--TEMPLATES-->
+		
+		<!--TEMPLATES END-->
+
+		<!--SCRIPTS-->
+		<script src="/vendor/angular/angular.min.js"></script>
+		<script src="/vendor/jquery/dist/jquery.min.js"></script>
+		<script src="/app/app.js"></script>
+		<script src="/app/components/sails-resource/sails-resource-service.js"></script>
+		<script src="/app/modules/stg-filter/stg.filter.js"></script>
+		<script src="/app/modules/stg-research/stg-research.js"></script>
+		<script src="/vendor/angular-classy/angular-classy.min.js"></script>
+		<script src="/vendor/angular-sanitize/angular-sanitize.min.js"></script>
+		<script src="/vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="/vendor/angular-ui-select/dist/select.min.js"></script>
+		<script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="/vendor/jquery/src/sizzle/dist/sizzle.min.js"></script>
+		<!--SCRIPTS END-->
+	</body>
+</html>

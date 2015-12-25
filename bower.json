@@ -1,0 +1,18 @@
+{
+  "name": "strategicore",
+  "version": "0.0.0",
+  "authors": [
+    "ec2-user"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.2.18",
+    "restangular": "~1.4.0",
+    "angular-ui-router": "~0.2.10",
+    "angular-classy": "~0.4.2",
+    "angular-sanitize": "~1.3.10"
+  }
+}
